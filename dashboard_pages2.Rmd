@@ -1,0 +1,93 @@
+---
+title: "My Storyboard at DACSS - pages"
+output: 
+  flexdashboard::flex_dashboard
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard) 
+```
+
+<!-- links -->
+```{r}
+map1alink='https://github.com/DACSS-Spatial-Data-Class/Homework1/raw/refs/heads/main/plot1_a.rds'
+viz1a=url(map1alink)
+
+map1blink='https://github.com/DACSS-Spatial-Data-Class/Homework1/raw/refs/heads/main/plot1_b.rds'
+  viz1b=url(map1blink)
+  
+map2alink='https://github.com/DACSS-Spatial-Data-Class/Homework1/raw/refs/heads/main/plot2_a.rds'
+viz2a=url(map2alink)
+
+map2blink='https://github.com/DACSS-Spatial-Data-Class/Homework1/raw/refs/heads/main/plot2_b.rds'
+  viz2b=url(map2blink)
+
+map3alink='https://github.com/DACSS-Spatial-Data-Class/Homework1/raw/refs/heads/main/plot3_a.rds'
+  viz3a=url(map3alink)
+
+map3blink='https://github.com/DACSS-Spatial-Data-Class/Homework1/raw/refs/heads/main/plot3_b.rds'
+  viz3b=url(map3blink)
+```
+
+Sidebar {.sidebar}
+=====================================
+
+
+Mobiles phone per thousand in South America 
+
+Chapter 1
+===================================== 
+
+
+
+### Static
+
+```{r}
+readRDS(viz1a)
+```
+
+
+Chapter 2
+===================================== 
+
+
+
+### Interactive
+
+```{r}
+readRDS(viz1b)
+```
+
+Chapter 3
+===================================== 
+
+
+### GIVE ME A TITLE 3
+
+```{r}
+readRDS(viz2a)
+```
+
+Chapter 4
+===================================== 
+
+
+### GIVE ME A TITLE 4
+
+```{r}
+readRDS(viz2b)
+```
+
+Chapter 5
+===================================== 
+
+
+```{r}
+readRDS(viz3a)
+```
+
+Chapter 6
+===================================== 
+```{r}
+readRDS(viz3b)
+```
